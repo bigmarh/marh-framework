@@ -1,0 +1,48 @@
+{
+  "name": "marh-framework",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "typecheck": "turbo run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "test:e2e": "playwright test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run typecheck",
+    "test:create": "cd packages/create-marh-app && npm test",
+    "create:desktop": "node packages/create-marh-app/index.js",
+    "create:pwa": "node packages/create-marh-app/index.js --template=pwa",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "preview": "turbo run preview",
+    "analyze:bundle": "turbo run analyze:bundle"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.0.0",
+    "jsdom": "^23.0.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.0.0",
+    "turbo": "^2.5.4",
+    "typescript": "5.8.2",
+    "vite-plugin-pwa": "^0.17.0",
+    "vitest": "^1.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,26 @@
+# Development files
+*.tsbuildinfo
+.turbo
+.changeset
+apps/
+e2e/
+docs/
+projectplan.md
+CLAUDE.md
+
+# Testing
+test-results/
+playwright-report/
+coverage/
+
+# Build artifacts
+*.log
+*.tgz
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

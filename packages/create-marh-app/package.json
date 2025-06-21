@@ -1,0 +1,52 @@
+{
+  "name": "create-marh-app",
+  "version": "1.0.0",
+  "description": "Create MARH applications with zero configuration",
+  "keywords": [
+    "marh",
+    "framework",
+    "typescript",
+    "mithril",
+    "pwa",
+    "electron",
+    "desktop",
+    "scaffolding",
+    "cli"
+  ],
+  "homepage": "https://github.com/yourusername/marh-framework#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/marh-framework.git",
+    "directory": "packages/create-marh-app"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/marh-framework/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "type": "module",
+  "bin": {
+    "create-marh-app": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "templates"
+  ],
+  "scripts": {
+    "test": "node index.js test-app",
+    "build": "echo 'No build step required for CLI'",
+    "typecheck": "echo 'No TypeScript in this package'"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

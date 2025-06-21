@@ -1,0 +1,11 @@
+{
+  "name": "@marh/tsconfig",
+  "version": "1.0.0",
+  "description": "TypeScript configuration for MARH framework",
+  "files": [
+    "base.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
